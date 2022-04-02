@@ -32,7 +32,7 @@ public class BaseClass {
 	String username=rc.getUserName();
 	String password=rc.getPassword();
 	String baseURL=rc.getBaseURL();
-	public static WebDriver driver;
+	static WebDriver driver;
 	Logger log;
 	
 	

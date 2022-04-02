@@ -11,10 +11,10 @@ import org.testng.annotations.Test;
 
 import com.inetBankingV1.pageObjects.HomePage;
 import com.inetBankingV1.pageObjects.LoginPage;
-import com.inetBankingV1.utilities.ReportGenerator;
+import com.inetBankingV1.utilities.CustomListener;
 import com.inetBankingV1.utilities.XLSUtils;
 
-@Listeners(ReportGenerator.class)
+@Listeners(CustomListener.class)
 public class TC_LoginTest_DDT_002 extends BaseClass{
 	
 	@Test(dataProvider="getData")
@@ -31,8 +31,8 @@ public class TC_LoginTest_DDT_002 extends BaseClass{
 		{
 			driver.switchTo().alert().accept();
 			driver.switchTo().defaultContent();
-			Assert.assertTrue(false);
 			log.warn("Login failed");
+			Assert.assertTrue(false);
 		}
 		else
 		{

@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-02T16:25:03 IST" name="InetBankingV1" finished-at="2022-04-02T16:25:21 IST" duration-ms="17645">
+  <suite started-at="2022-04-02T18:18:23 IST" name="InetBankingV1" finished-at="2022-04-02T18:18:40 IST" duration-ms="16357">
     <groups>
     </groups>
-    <test started-at="2022-04-02T16:25:03 IST" name="BankingAppTest" finished-at="2022-04-02T16:25:21 IST" duration-ms="17645">
+    <test started-at="2022-04-02T18:18:23 IST" name="BankingAppTest" finished-at="2022-04-02T18:18:40 IST" duration-ms="16357">
       <class name="com.inetBankingV1.testCases.TC_LoginTest_DDT_002">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetBankingV1.testCases.TC_LoginTest_DDT_002@3738449f]" started-at="2022-04-02T16:25:03 IST" name="setup" finished-at="2022-04-02T16:25:12 IST" duration-ms="8172" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetBankingV1.testCases.TC_LoginTest_DDT_002@68dc098b]" started-at="2022-04-02T18:18:23 IST" name="setup" finished-at="2022-04-02T18:18:30 IST" duration-ms="7251" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LoginTestDDT(java.lang.String, java.lang.String)[pri:0, instance:com.inetBankingV1.testCases.TC_LoginTest_DDT_002@3738449f]" started-at="2022-04-02T16:25:12 IST" name="LoginTestDDT" data-provider="getData" finished-at="2022-04-02T16:25:16 IST" duration-ms="3799" status="PASS">
+        <test-method signature="LoginTestDDT(java.lang.String, java.lang.String)[pri:0, instance:com.inetBankingV1.testCases.TC_LoginTest_DDT_002@68dc098b]" started-at="2022-04-02T18:18:31 IST" name="LoginTestDDT" data-provider="getData" finished-at="2022-04-02T18:18:35 IST" duration-ms="3605" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,7 +34,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTestDDT -->
-        <test-method signature="LoginTestDDT(java.lang.String, java.lang.String)[pri:0, instance:com.inetBankingV1.testCases.TC_LoginTest_DDT_002@3738449f]" started-at="2022-04-02T16:25:16 IST" name="LoginTestDDT" data-provider="getData" finished-at="2022-04-02T16:25:18 IST" duration-ms="1937" status="FAIL">
+        <test-method signature="LoginTestDDT(java.lang.String, java.lang.String)[pri:0, instance:com.inetBankingV1.testCases.TC_LoginTest_DDT_002@68dc098b]" started-at="2022-04-02T18:18:35 IST" name="LoginTestDDT" data-provider="getData" finished-at="2022-04-02T18:18:36 IST" duration-ms="1915" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
 at org.junit.Assert.fail(Assert.java:86)
 at org.junit.Assert.assertTrue(Assert.java:41)
 at org.junit.Assert.assertTrue(Assert.java:52)
-at com.inetBankingV1.testCases.TC_LoginTest_DDT_002.LoginTestDDT(TC_LoginTest_DDT_002.java:34)
+at com.inetBankingV1.testCases.TC_LoginTest_DDT_002.LoginTestDDT(TC_LoginTest_DDT_002.java:35)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -88,7 +88,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTestDDT -->
-        <test-method signature="LoginTestDDT(java.lang.String, java.lang.String)[pri:0, instance:com.inetBankingV1.testCases.TC_LoginTest_DDT_002@3738449f]" started-at="2022-04-02T16:25:18 IST" name="LoginTestDDT" data-provider="getData" finished-at="2022-04-02T16:25:20 IST" duration-ms="1895" status="FAIL">
+        <test-method signature="LoginTestDDT(java.lang.String, java.lang.String)[pri:0, instance:com.inetBankingV1.testCases.TC_LoginTest_DDT_002@68dc098b]" started-at="2022-04-02T18:18:37 IST" name="LoginTestDDT" data-provider="getData" finished-at="2022-04-02T18:18:39 IST" duration-ms="1786" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -107,7 +107,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 at org.junit.Assert.fail(Assert.java:86)
 at org.junit.Assert.assertTrue(Assert.java:41)
 at org.junit.Assert.assertTrue(Assert.java:52)
-at com.inetBankingV1.testCases.TC_LoginTest_DDT_002.LoginTestDDT(TC_LoginTest_DDT_002.java:34)
+at com.inetBankingV1.testCases.TC_LoginTest_DDT_002.LoginTestDDT(TC_LoginTest_DDT_002.java:35)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -142,7 +142,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTestDDT -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetBankingV1.testCases.TC_LoginTest_DDT_002@3738449f]" started-at="2022-04-02T16:25:20 IST" name="tearDown" finished-at="2022-04-02T16:25:21 IST" duration-ms="638" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetBankingV1.testCases.TC_LoginTest_DDT_002@68dc098b]" started-at="2022-04-02T18:18:39 IST" name="tearDown" finished-at="2022-04-02T18:18:40 IST" duration-ms="643" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

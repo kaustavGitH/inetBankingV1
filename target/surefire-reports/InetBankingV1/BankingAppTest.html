@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>BankingAppTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 01 19:59:20 IST 2022</td>
+<td>Started on:</td><td>Sat Apr 02 17:07:16 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>12 seconds (12406 ms)</td>
+<tr><td>Total time:</td><td>16 seconds (16608 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -82,8 +82,8 @@ function toggleAllBoxes() {
 	at org.junit.Assert.assertTrue(Assert.java:52)
 	at com.inetBankingV1.testCases.TC_LoginTest_DDT_002.LoginTestDDT(TC_LoginTest_DDT_002.java:34)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1043882455", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1043882455'><pre>java.lang.AssertionError
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace573242471", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace573242471'><pre>java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
 	at org.junit.Assert.assertTrue(Assert.java:52)
@@ -122,20 +122,27 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
 </pre></div></td>
 <td>1</td>
-<td>com.inetBankingV1.testCases.TC_LoginTest_DDT_002@3943a2be</td></tr>
+<td>com.inetBankingV1.testCases.TC_LoginTest_DDT_002@343570b7</td></tr>
 <tr>
-<td title='com.inetBankingV1.testCases.TC_LoginTest_DDT_002.LoginTestDDT()'><b>LoginTestDDT</b><br>Test class: com.inetBankingV1.testCases.TC_LoginTest_DDT_002</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;ts&quot; is null
-	at com.inetBankingV1.testCases.BaseClass.takeScreenshot(BaseClass.java:71)
-	at com.inetBankingV1.utilities.ReportGenerator.onTestFailure(ReportGenerator.java:39)
+<td title='com.inetBankingV1.testCases.TC_LoginTest_DDT_002.LoginTestDDT()'><b>LoginTestDDT</b><br>Test class: com.inetBankingV1.testCases.TC_LoginTest_DDT_002<br>Parameters: dngr480547, 7ajUsap</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.inetBankingV1.testCases.TC_LoginTest_DDT_002.LoginTestDDT(TC_LoginTest_DDT_002.java:34)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1202168065", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1202168065'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;ts&quot; is null
-	at com.inetBankingV1.testCases.BaseClass.takeScreenshot(BaseClass.java:71)
-	at com.inetBankingV1.utilities.ReportGenerator.onTestFailure(ReportGenerator.java:39)
-	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:66)
-	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:651)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1408043496", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1408043496'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.inetBankingV1.testCases.TC_LoginTest_DDT_002.LoginTestDDT(TC_LoginTest_DDT_002.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
@@ -163,8 +170,8 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
 </pre></div></td>
-<td>6</td>
-<td>com.inetBankingV1.testCases.TC_LoginTest_DDT_002@3943a2be</td></tr>
+<td>1</td>
+<td>com.inetBankingV1.testCases.TC_LoginTest_DDT_002@343570b7</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -177,7 +184,7 @@ function toggleAllBoxes() {
 <td title='com.inetBankingV1.testCases.TC_LoginTest_DDT_002.LoginTestDDT()'><b>LoginTestDDT</b><br>Test class: com.inetBankingV1.testCases.TC_LoginTest_DDT_002<br>Parameters: mngr392805, uvYmuzA</td>
 <td></td>
 <td>3</td>
-<td>com.inetBankingV1.testCases.TC_LoginTest_DDT_002@3943a2be</td></tr>
+<td>com.inetBankingV1.testCases.TC_LoginTest_DDT_002@343570b7</td></tr>
 </table><p>
 </body>
 </html>

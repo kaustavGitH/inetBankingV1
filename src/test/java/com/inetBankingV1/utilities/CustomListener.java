@@ -8,25 +8,27 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.inetBankingV1.testCases.BaseClass;
 
-public class ReportGenerator extends BaseClass implements ITestListener{
+public class CustomListener extends BaseClass implements ITestListener{
 	
+	ExtentTest test;
+	ExtentReports extent=ExtentReporter.getReport();
 	@Override
 	public void onTestStart(ITestResult result) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onTestStart(result);
+		test=extent.createTest(result.getMethod().getMethodName());
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onTestSuccess(result);
+		test.log(Status.PASS, "Test passed");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
+		test.log(Status.FAIL,result.getThrowable());
 		String failMethodName=result.getMethod().getMethodName();
 		try {
 			takeScreenshot(failMethodName);
@@ -62,19 +64,8 @@ public class ReportGenerator extends BaseClass implements ITestListener{
 
 	@Override
 	public void onFinish(ITestContext context) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onFinish(context);
+		extent.flush();
 	}
 
-	public static void Reporter()
-	{
-		String path=System.getProperty("user.dir")+"\\reports\\index.html";
-		ExtentSparkReporter reporter=new ExtentSparkReporter(path);
-		reporter.config().setReportName("inetBankingV1_Automation");
-		
-		ExtentReports report=new ExtentReports();
-		report.attachReporter(reporter);
-		
-		report.createTest("Initial Demo");
-	}
+	
 }
