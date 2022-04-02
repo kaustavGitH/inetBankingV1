@@ -6,12 +6,15 @@ import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.inetBankingV1.pageObjects.HomePage;
 import com.inetBankingV1.pageObjects.LoginPage;
+import com.inetBankingV1.utilities.ReportGenerator;
 import com.inetBankingV1.utilities.XLSUtils;
 
+@Listeners(ReportGenerator.class)
 public class TC_LoginTest_DDT_002 extends BaseClass{
 	
 	@Test(dataProvider="getData")
@@ -28,7 +31,7 @@ public class TC_LoginTest_DDT_002 extends BaseClass{
 		{
 			driver.switchTo().alert().accept();
 			driver.switchTo().defaultContent();
-			Assert.assertTrue(true);
+			Assert.assertTrue(false);
 			log.warn("Login failed");
 		}
 		else
@@ -73,37 +76,6 @@ public class TC_LoginTest_DDT_002 extends BaseClass{
 			}
 		}
 		return data;
-		
-	}
-	
-	@Test(enabled = false)
-	public void xpathAxesPractice() throws InterruptedException
-	{
-		driver.get("https://www.facebook.com/");
-		
-		//Parent example
-		String text=driver.findElement(By.xpath("//button[@name='login']/parent::*")).getText();
-		System.out.println(text);
-		Thread.sleep(5000);
-		
-		//Ancestor and descendant example
-		driver.findElement(By.xpath("//button[@name='login']/ancestor::form/descendant::div//input[@id='email']")).sendKeys("Kaustav");
-		
-		//Following example
-		int size=driver.findElements(By.xpath("//button[@name='login']/following::div")).size();
-		System.out.println("Total following elements = "+size);
-		
-		//Following-sibling example
-		size=driver.findElements(By.xpath("//button[@name='login']/parent::div/following-sibling::div")).size();
-		System.out.println("Total following sibling elements = "+size);
-		
-		//Preceding example
-		size=driver.findElements(By.xpath("//button[@name='login']/preceding::div")).size();
-		System.out.println("Total preceding elements = "+size);
-		
-		//Preceding-sibling example
-		size=driver.findElements(By.xpath("//button[@name='login']/parent::div/preceding-sibling::div")).size();
-		System.out.println("Total preceding-sibling elements = "+size);
 		
 	}
 
